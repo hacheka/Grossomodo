@@ -1,0 +1,52 @@
+/* #492547 */
+/* #7f4a69 */
+
+html, body {
+  font-size: 100%;
+  margin: 0;
+  background-color: #f5f4f8;
+}
+
+.header {
+  font: normal 1em sans-serif;
+  color: white;
+  background: linear-gradient(to right, rgba(94,55,90,1) 0%, rgba(94,55,90,1) 37%, rgba(127,74,105,1) 100%);
+  min-height: 5em;
+  box-shadow: 1px -50px 71px 32px rgba(73,37,71,1);
+}
+
+.header__title {
+  padding: 0.5em;
+}
+
+.playlist {
+  font: normal 1em sans-serif;
+}
+
+.playlist__song {
+  margin: 1em;
+  padding: 1em;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(73,37,71,0.25);
+  border-radius: 4px 4px 4px 4px;
+  border: 0px solid #000000;
+  cursor: pointer;
+  transition: padding 100ms ease-in-out;
+}
+
+.playlist__song:hover {
+  padding-left: 2em;
+  transition: padding 100ms ease-in-out;
+}
+
+.playlist__song--selected {
+  background-color: orange;
+}
+
+.playlist__song-order {
+  color: #7f4a69;
+}
+
+.playlist__song-title {
+  color: #492547;
+}

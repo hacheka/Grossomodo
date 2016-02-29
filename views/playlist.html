@@ -1,0 +1,8 @@
+<div class="playlist">
+  <div ng-repeat="song in $ctrl.songs">
+    <div class="playlist__song" ng-class="{ 'playlist__song--selected': $ctrl.selectedSong.order === song.order }" ng-click="$ctrl.onSelectSong({ index: $index })">  
+      <span class="playlist__song-order">{{ song.order }}. </span>
+      <span class="playlist__song-title">{{ song.title }}</span>
+    </div>
+  </div>
+</div>
