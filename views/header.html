@@ -1,4 +1,8 @@
 <div class="header">
   <div class="header__title">GROSSOMODO</div>
-  <player selected-song="$ctrl.selectedSong"></player>
+  <grosso-player
+    selected-song="$ctrl.selectedSong"
+    on-previous-song="$ctrl.onPreviousSong()"
+    on-next-song="$ctrl.onNextSong()">
+  </grosso-player>
 </div>

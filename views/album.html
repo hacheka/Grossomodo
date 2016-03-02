@@ -1,2 +1,6 @@
-<header selected-song="$ctrl.selectedSong"></header>
+<header
+  selected-song="$ctrl.selectedSong"
+  on-previous-song="$ctrl.previousSong()"
+  on-next-song="$ctrl.nextSong()">
+</header>
 <playlist songs="$ctrl.songs" selected-song="$ctrl.selectedSong" on-select-song="$ctrl.selectSong(index)"></playlist>
