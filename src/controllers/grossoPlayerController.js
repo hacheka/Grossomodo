@@ -2,10 +2,6 @@ var app = angular.module('grossomodoApp');
 
 app.controller('GrossoPlayerController',  ['$scope', '$window', '$timeout', function($scope, $window, $timeout) {
     var ctrl = this;
-  
-    $scope.info = {
-      albumName: 'Manifiesto',
-    };
 
     $scope.playing = false;
     $scope.currentBarNumber = 0;
@@ -64,7 +60,7 @@ app.controller('GrossoPlayerController',  ['$scope', '$window', '$timeout', func
         $timeout(function() {
          $scope.currentBarNumber = barNumber;
          if (barNumber >= 0) {
-           $scope.currentBar = ctrl.selectedSong.lyrics[barNumber].toUpperCase();
+           $scope.currentBar = ctrl.selectedSong.bars[barNumber].toUpperCase();
          }
          
         }, 0);
