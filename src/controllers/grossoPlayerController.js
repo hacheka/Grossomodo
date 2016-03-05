@@ -62,7 +62,6 @@ app.controller('GrossoPlayerController',  ['$scope', '$window', '$timeout', func
          if (barNumber >= 0) {
            $scope.currentBar = ctrl.selectedSong.bars[barNumber].toUpperCase();
          }
-         
         }, 0);
       }
       

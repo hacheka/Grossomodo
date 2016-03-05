@@ -4,7 +4,9 @@
     <h2 class="player__song-name">{{ ctrl.selectedSong.title }}</h2>
   </div>
   <div class="player__hit">{{ currentBar }}</div>
-  <audio ng-src="{{ ctrl.selectedSong.songUrl }}"></audio>
+  <audio>
+    <source ng-repeat="source in ctrl.selectedSong.media" ng-src="{{ source.url }}" type="{{ source.type }}">
+  </audio>
   <div class="player__controls">
     <div class="player__play" ng-click="play()" ng-show="!playing">PLAY</div>
     <div class="player__prev" ng-click="prev()" ng-show="playing">PREV</div>

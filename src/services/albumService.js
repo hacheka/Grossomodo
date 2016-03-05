@@ -10,6 +10,13 @@ app.factory('albumService', function () {
       id: 'MNFST-01',
       order: 1,
       title: 'No hay quien',
+      media: [{
+        	 url: 'audio/manifiesto/01-no-hay-quien.mp3',
+           type: 'audio/mp3'  
+        },{
+        	 url: 'audio/manifiesto/01-no-hay-quien.ogg',
+           type: 'audio/ogg'  
+      }],
       songUrl: 'audio/manifiesto/01-no-hay-quien.mp3',
       firstKick: 2.768,
       tempo: 92
@@ -90,6 +97,80 @@ app.factory('albumService', function () {
   
   albums.push(manifiestoInfo);
   
+  var inocentesInfo = {
+    albumName: 'Inocentes',
+    id: 'INOC',
+    songs: [{
+      id: 'INOC-01',
+      order: 1,
+      title: 'Intro',
+    },{
+      id: 'INOC-02',
+      order: 2,
+      title: 'Ultraboomap'    
+    },{
+      id: 'INOC-03',
+      order: 3,
+      title: 'Inocentes'
+    },{
+      id: 'INOC-04',
+      order: 4,
+      title: 'Antes del colapso'
+    },{
+      id: 'INOC-05',     
+      order: 5,
+      title: 'Música'
+    },{
+      id: 'INOC-06',
+      order: 6,
+      title: 'Hojas en blanco'
+    },{
+      id: 'INOC-07',
+      order: 7,
+      title: 'Ya se sabe'
+    },{
+      id: 'INOC-08',
+      order: 8,
+      title: 'Adamantio'
+    },{
+      id: 'INOC-09',
+      order: 9,
+      title: 'Q.M.V.A.C.'
+    },{
+      id: 'INOC-10',
+      order: 10,
+      title: 'Veintitantos'
+    },{
+      id: 'INOC-11',
+      order: 11,
+      title: 'Vida en Martes'
+    },{
+      id: 'INOC-12',
+      order: 12,
+      title: 'Locomotion'
+    },{
+      id: 'INOC-13',
+      order: 13,
+      title: 'El Tribaile'
+    },{
+      id: 'INOC-14',
+      order: 14,
+      title: 'Clásico'
+    }]
+  };
+
+  albums.push(inocentesInfo);
+  
+  var fetchAlbums = function () {
+    return albums.map(function (album) {
+      return {
+        name: album.albumName,
+        id: album.id,
+        numberOfSongs: album.songs.length
+      };
+    });
+  };
+  
   var fetchAlbum = function (albumId) {
     var fetchedAlbum = {};
     
@@ -103,6 +184,7 @@ app.factory('albumService', function () {
   }
 
   return {
+    fetchAlbums: fetchAlbums,
     fetchAlbum: fetchAlbum
   };
 });

@@ -5,12 +5,13 @@ function HeaderController ($scope) {
 }
 
 app.component('header', {
-  templateUrl: '../../views/header.html',
+  templateUrl: '../../views/partials/headerPartial.html',
   controller: HeaderController,
   bindings: {
     albumName: '<',
     selectedSong: '<',
     onPreviousSong: '&',
-    onNextSong: '&'
+    onNextSong: '&',
+    onShowDiscography: '&'
   }
 });

@@ -1,0 +1,18 @@
+<header
+  album-name="$ctrl.selectedSong.album"
+  selected-song="$ctrl.selectedSong"
+  on-previous-song="$ctrl.previousSong()"
+  on-next-song="$ctrl.nextSong()"
+  on-show-discography="$ctrl.showDiscography()">
+</header>
+<playlist
+  ng-show="$ctrl.playlistVisible"
+  songs="$ctrl.selectedAlbum.songs"
+  selected-song="$ctrl.selectedSong"
+  on-select-song="$ctrl.selectSong(index)">
+</playlist>
+<selector
+  albums="$ctrl.albums"
+  ng-show="$ctrl.selectorVisible"
+  on-select-album="$ctrl.selectAlbum(id)">
+</selector>

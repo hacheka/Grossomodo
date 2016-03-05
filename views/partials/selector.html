@@ -1,0 +1,8 @@
+<div class="selector">
+  <div ng-repeat="album in $ctrl.albums">
+    <div class="selector__album" ng-click="$ctrl.onSelectAlbum({ id: album.id })">
+      <h1>{{ album.name }}</h1>
+      <span>{{ album.numberOfSongs}} temas</span>
+    </div>   
+  </div>  
+</div>
