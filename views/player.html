@@ -1,17 +1,17 @@
 <div class="player">
   <div class="player__song-info">
-    <h1 class="player__album-name">{{ ctrl.albumName }}</h1>
-    <h2 class="player__song-name">{{ ctrl.selectedSong.title }}</h2>
+    <h1 class="player__song-name">{{ ctrl.selectedSong.title }}</h1>
+    <span class="player__album-name">{{ ctrl.albumName }}</span>
   </div>
-  <div class="player__hit">{{ currentBar }}</div>
   <audio>
     <source ng-repeat="source in ctrl.selectedSong.media" ng-src="{{ source.url }}" type="{{ source.type }}">
   </audio>
-  <div class="player__controls">
-    <div class="player__play" ng-click="play()" ng-show="!playing">PLAY</div>
-    <div class="player__prev" ng-click="prev()" ng-show="playing">PREV</div>
-    <div class="player__rewind" ng-click="rewind()" ng-show="playing">REWIND</div>    
-    <div class="player__pause" ng-click="pause()" ng-show="playing">PAUSE</div>
-    <div class="player__next" ng-click="next()" ng-show="playing">NEXT</div>
+  <div class="player__controls">    
+    <div class="player__control" ng-click="prev()" ng-show="playing">PREV</div>   
+    <div class="player__big-control player__big-control--play" ng-click="play()" ng-show="!playing"></div>
+    <div class="player__big-control" ng-click="pause()" ng-show="playing">PAUSE</div>
+    <div class="player__control" ng-click="next()" ng-show="playing">NEXT</div>
   </div>
+  <div class="cb"></div>
+  <div class="player__bar">{{ currentBar }}</div>
 </div>
