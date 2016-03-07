@@ -6,7 +6,7 @@ app.directive('grossoPlayer', function () {
     templateUrl: '../../views/player.html',
     scope: {},
     bindToController: {
-      albumName: '<',
+      album: '<',
       selectedSong: '<',
       onPreviousSong: '&',
       onNextSong: '&'

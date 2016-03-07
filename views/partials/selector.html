@@ -1,8 +1,11 @@
 <div class="selector">
   <div ng-repeat="album in $ctrl.albums">
-    <div class="selector__album" ng-click="$ctrl.onSelectAlbum({ id: album.id })">
-      <h1>{{ album.name }}</h1>
-      <span>{{ album.numberOfSongs}} temas</span>
+    <div class="selector__album" ng-click="$ctrl.onSelectAlbum({ id: album.id })" ng-style="{ 'background-image': 'url(' + album.cover + ')'}">
+      <div class="selector__album-info">
+        <h1>{{ album.name }}</h1>
+        <span>{{ album.numberOfSongs}} temas</span>
+      </div>
     </div>   
-  </div>  
+  </div>
+  <div class="cb"></div> 
 </div>

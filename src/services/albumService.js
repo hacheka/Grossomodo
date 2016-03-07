@@ -6,6 +6,7 @@ app.factory('albumService', function () {
   var manifiestoInfo = {
     albumName: 'Manifiesto',
     id: 'MNFST',
+    cover: 'images/manifiesto-cover.jpg',
     songs: [{
       id: 'MNFST-01',
       order: 1,
@@ -100,6 +101,7 @@ app.factory('albumService', function () {
   var inocentesInfo = {
     albumName: 'Inocentes',
     id: 'INOC',
+    cover: 'images/inocentes-cover.jpg',    
     songs: [{
       id: 'INOC-01',
       order: 1,
@@ -166,7 +168,8 @@ app.factory('albumService', function () {
       return {
         name: album.albumName,
         id: album.id,
-        numberOfSongs: album.songs.length
+        numberOfSongs: album.songs.length,
+        cover: album.cover
       };
     });
   };

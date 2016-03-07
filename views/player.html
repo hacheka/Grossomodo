@@ -1,7 +1,7 @@
 <div class="player">
   <div class="player__song-info">
     <h1 class="player__song-name">{{ ctrl.selectedSong.title }}</h1>
-    <span class="player__album-name">{{ ctrl.albumName }}</span>
+    <span class="player__album-name">{{ ctrl.album.albumName }}</span>
   </div>
   <audio>
     <source ng-repeat="source in ctrl.selectedSong.media" ng-src="{{ source.url }}" type="{{ source.type }}">

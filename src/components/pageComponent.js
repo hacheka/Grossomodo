@@ -17,7 +17,6 @@ function PageController ($scope, albumService, lyricsService) {
       if (index > - 1 && index < ctrl.selectedAlbum.songs.length) {
         selectedIndex = index;
         ctrl.selectedSong = ctrl.selectedAlbum.songs[index];
-        ctrl.selectedSong.album = ctrl.selectedAlbum.albumName;
         lyrics = lyricsService.fetchLyrics(ctrl.selectedSong.id);
         if (lyrics !== null) {
           ctrl.selectedSong.bars = lyrics.bars;

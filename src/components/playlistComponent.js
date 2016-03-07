@@ -6,9 +6,10 @@ function PlaylistController ($scope) {
 }
 
 app.component('playlist', {
-  templateUrl: '../../views/playlist.html',
+  templateUrl: '../../views/partials/playlist.html',
   controller: PlaylistController,
   bindings: {
+    album: '<',
     songs: '<',
     selectedSong: '<',
     onSelectSong: '&'

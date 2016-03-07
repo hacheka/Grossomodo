@@ -1,5 +1,5 @@
 <header
-  album-name="$ctrl.selectedSong.album"
+  album="$ctrl.selectedAlbum"
   selected-song="$ctrl.selectedSong"
   on-previous-song="$ctrl.previousSong()"
   on-next-song="$ctrl.nextSong()"
@@ -7,6 +7,7 @@
 </header>
 <playlist
   ng-show="$ctrl.playlistVisible"
+  album="$ctrl.selectedAlbum"
   songs="$ctrl.selectedAlbum.songs"
   selected-song="$ctrl.selectedSong"
   on-select-song="$ctrl.selectSong(index)">

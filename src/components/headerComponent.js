@@ -8,7 +8,7 @@ app.component('header', {
   templateUrl: '../../views/partials/headerPartial.html',
   controller: HeaderController,
   bindings: {
-    albumName: '<',
+    album: '<',
     selectedSong: '<',
     onPreviousSong: '&',
     onNextSong: '&',
