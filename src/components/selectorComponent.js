@@ -1,15 +1,14 @@
-var app = angular.module('grossomodoApp');
-
-function SelectorController ($scope) {
-  var ctrl = this;
-
-}
-
-app.component('selector', {
-  templateUrl: '../../views/partials/selector.html',
-  controller: SelectorController,
-  bindings: {
-    albums: '<',
-    onSelectAlbum: '&'
+module.exports = function (ngModule) {
+  function SelectorController ($scope) {
+    var ctrl = this;
   }
-});
+
+  ngModule.component('selector', {
+    template: require('../../views/partials/selector.html'),
+    controller: SelectorController,
+    bindings: {
+      albums: '<',
+      onSelectAlbum: '&'
+    }
+  });
+};
