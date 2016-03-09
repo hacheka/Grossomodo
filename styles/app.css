@@ -57,9 +57,9 @@ html, body {
 }
 
 .player__control {
-  border-radius: 1.5em;
-  width: 3em;
-  height: 3em;
+  border-radius: 1em;
+  width: 2em;
+  height: 2em;
   float: right;
   cursor: pointer;
   background-color: #f3f2f7;
@@ -74,11 +74,32 @@ html, body {
   background-color: #f3f2f7;
 }
 
-.player__big-control--play {
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjMyLjE1MyAyMzIuMTUzIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMzIuMTUzIDIzMi4xNTM7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJQbGF5Ij4NCiAgPHBhdGggZmlsbD0iIzdlNDk2OSIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkOyIgZD0iTTIwMy43OTEsOTkuNjI4TDQ5LjMwNywyLjI5NGMtNC41NjctMi43MTktMTAuMjM4LTIuMjY2LTE0LjUyMS0yLjI2NmMtMTcuMTMyLDAtMTcuMDU2LDEzLjIyNy0xNy4wNTYsMTYuNTc4djE5OC45NGMwLDIuODMzLTAuMDc1LDE2LjU3OSwxNy4wNTYsMTYuNTc5YzQuMjgzLDAsOS45NTUsMC40NTEsMTQuNTIxLTIuMjY3bDE1NC40ODMtOTcuMzMzYzEyLjY4LTcuNTQ1LDEwLjQ4OS0xNi40NDksMTAuNDg5LTE2LjQ0OVMyMTYuNDcxLDEwNy4xNzIsMjAzLjc5MSw5OS42Mjh6Ii8+DQo8L2c+DQo8L3N2Zz4=);
-  background-size: 2em;
+.player__control--play {
+  background-image: url('../images/play.png');
+  background-size: 1.4em;
   background-repeat: no-repeat;
-  background-position: 57% 50%;
+  background-position: 65% 50%;
+}
+
+.player__control--pause {
+  background-image: url('../images/pause.png');
+  background-size: 1.4em;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.player__control--prev {
+  background-image: url('../images/prev.png');
+  background-size: 1.4em;
+  background-repeat: no-repeat;
+  background-position: 33% 50%;  
+}
+
+.player__control--next {
+  background-image: url('../images/next.png');
+  background-size: 1.4em;
+  background-repeat: no-repeat;
+  background-position: 33% 50%;  
 }
 
 .playlist {
@@ -131,6 +152,37 @@ html, body {
 
 .player__hit--highlighted {
   background-color: orange;
+}
+
+.player__progress-bar {
+  width: 100%;
+  height: 0.25em;
+  background-color: white;
+  z-index: 100;
+  border-radius: 0.1em;
+  position: relative;
+  border: 0.15em solid white;
+}
+
+.player__buffered-bar {
+  height: 0.25em;
+  background-color: #dbbbce;
+  z-index: 200;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: width 100 linear;
+  -moz-transition: width 100 linear;
+  transition: width 100 linear;
+}
+
+.player__played-bar {
+  height: 0.25em;
+  background-color: #492547;
+  z-index: 300;
+  position: absolute;
+  top: 0;
+  left: 0;  
 }
 
 /* Selector */

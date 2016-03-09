@@ -17,46 +17,37 @@ module.exports = function (ngModule) {
         scope.audio = element.find('audio')[0];
         
         // Audio events
-        scope.audio.addEventListener('pause', function () {
-          // console.log('EVENTO PAUSE!');
-        });
-
-        scope.audio.addEventListener('abort', function () {
-          // console.log('EVENTO ABORT!');
-        });
-        
         scope.audio.addEventListener('canplaythrough', function () {
-          // console.log('EVENTO CANPLAYTHROUGH!');
           scope.onCanPlay();
-        });
-              
-        scope.audio.addEventListener('loadeddata', function () {
-          // console.log('EVENTO LOADEDDATA!');
         });
         
         scope.audio.addEventListener('loadedmetadata', function () {
-          // console.log('EVENTO LOADEDMETADATA!');
-        });
-        
-        scope.audio.addEventListener('loadstart', function () {
-          // console.log('EVENTO LOADSTART!');
+          scope.setCurrentDuration(scope.audio.duration);
         });
 
         scope.audio.addEventListener('progress', function () {
-          // var i = 0;
-          // 
-          // for (i = 0; i < scope.audio.buffered.length; i++) {
-          //   console.log('From ' + scope.audio.buffered.start(i) + ' to ' + scope.audio.buffered.end(i) + '.');
-          // }
+          var lastBuffered = 0,
+            i;
+          
+          for (i = 0; i < scope.audio.buffered.length; i++) {
+            if (scope.audio.buffered.end(i) > lastBuffered) {
+              lastBuffered = scope.audio.buffered.end(i);
+            }
+          }
+          
+          scope.setBufferedTime(lastBuffered);
         });       
 
         scope.audio.addEventListener('timeupdate', function () {
-          // console.log('EVENTO TIMEUPDATE!');
+          scope.onTimeUpdate(scope.audio.currentTime);
         });
               
         // Destroy
         scope.$on('$destroy', function() {
-          // scope.audio.removeEventListener('pause');
+          scope.audio.removeEventListener('canplaythrough');
+          scope.audio.removeEventListener('loadedmetadata');
+          scope.audio.removeEventListener('progress');
+          scope.audio.removeEventListener('timeupdate');
         });
       }
     };

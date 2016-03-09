@@ -24,74 +24,158 @@ module.exports = function (ngModule) {
         id: 'MNFST-02',
         order: 2,
         title: 'Putos amos',
-        songUrl: 'audio/manifiesto/02-putos-amos.mp3',
+        media: [{
+            url: 'audio/manifiesto/02-putos-amos.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/02-putos-amos.ogg',
+            type: 'audio/ogg'  
+        }],
         firstKick: 2.782,
         tempo: 93     
       },{
         id: 'MNFST-03',
         order: 3,
         title: 'Phardarthemcee',
-        songUrl: 'audio/manifiesto/03-phardarthemcee.mp3'
+        media: [{
+            url: 'audio/manifiesto/03-phardarthemcee.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/03-phardarthemcee.ogg',
+            type: 'audio/ogg'  
+        }],
       },{
         id: 'MNFST-04',
         order: 4,
         title: 'Bienvenido',
-        songUrl: 'audio/manifiesto/04-bienvenido.mp3'
+        media: [{
+            url: 'audio/manifiesto/04-bienvenido.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/04-bienvenido.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-05',     
         order: 5,
         title: 'Rottweiler',
-        songUrl: 'audio/manifiesto/05-rottweiler.mp3'
+        media: [{
+            url: 'audio/manifiesto/05-rottweiler.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/05-rottweiler.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-06',
         order: 6,
         title: 'Me la pela.. a mi ke?',
-        songUrl: 'audio/manifiesto/06-me-la-pela-a-mi-ke.mp3'
+        media: [{
+            url: 'audio/manifiesto/06-me-la-pela-a-mi-ke.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/06-me-la-pela-a-mi-ke.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-07',
         order: 7,
         title: 'Grozzeros',
-        songUrl: 'audio/manifiesto/07-grozzeros.mp3'
+        media: [{
+            url: 'audio/manifiesto/07-grozzeros.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/07-grozzeros.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-08',
         order: 8,
         title: 'Arena',
-        songUrl: 'audio/manifiesto/08-arena.mp3'
+        media: [{
+            url: 'audio/manifiesto/08-arena.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/08-arena.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-09',
         order: 9,
         title: 'Welelo skit',
-        songUrl: 'audio/manifiesto/09-welelo-skit.mp3'
+        media: [{
+            url: 'audio/manifiesto/09-welelo-skit.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/09-welelo-skit.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-10',
         order: 10,
         title: 'Ramala',
-        songUrl: 'audio/manifiesto/10-ramala.mp3'
+        media: [{
+            url: 'audio/manifiesto/10-ramala.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/10-ramala.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-11',
         order: 11,
         title: 'Contracultura',
-        songUrl: 'audio/manifiesto/11-contracultura.mp3'
+        media: [{
+            url: 'audio/manifiesto/11-contracultura.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/11-contracultura.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-12',
         order: 12,
         title: 'Llevadme ante vuestro lider',
-        songUrl: 'audio/manifiesto/12-llevadme-ante-vuestro-lider.mp3'
+        media: [{
+            url: 'audio/manifiesto/12-llevadme-ante-vuestro-lider.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/12-llevadme-ante-vuestro-lider.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-13',
         order: 13,
         title: 'Sin piedad',
-        songUrl: 'audio/manifiesto/13-sin-piedad.mp3'
+        media: [{
+            url: 'audio/manifiesto/13-sin-piedad.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/13-sin-piedad.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-14',
         order: 14,
         title: 'Fuego y hielo',
-        songUrl: 'audio/manifiesto/14-fuego-y-hielo.mp3'
+        media: [{
+            url: 'audio/manifiesto/14-fuego-y-hielo.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/14-fuego-y-hielo.ogg',
+            type: 'audio/ogg'  
+        }]
       },{
         id: 'MNFST-15',
         order: 15,
         title: 'Outrolophitecus',
-        songUrl: 'audio/manifiesto/15-outrolophitecus.mp3'
+        media: [{
+            url: 'audio/manifiesto/15-outrolophitecus.mp3',
+            type: 'audio/mp3'  
+          },{
+            url: 'audio/manifiesto/15-outrolophitecus.ogg',
+            type: 'audio/ogg'  
+        }]
       }]
     };
     
