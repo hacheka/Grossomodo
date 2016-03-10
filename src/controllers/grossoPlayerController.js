@@ -16,14 +16,14 @@ function grossoPlayerController (ngModule) {
       };
       
       $scope.play = function () {
-        $scope.audio.play();
-        $scope.playing = true;
-        updateTime();
-      };
-      
-      $scope.pause = function () {
-        $scope.audio.pause();
-        $scope.playing = false;
+        if (!$scope.playing) {
+          $scope.audio.play();
+          $scope.playing = true;
+          updateTime();
+        } else {
+          $scope.audio.pause();
+          $scope.playing = false;
+        }
       };
       
       $scope.rewind = function () {

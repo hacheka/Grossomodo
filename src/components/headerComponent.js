@@ -11,7 +11,8 @@ module.exports = function (ngModule) {
       selectedSong: '<',
       onPreviousSong: '&',
       onNextSong: '&',
-      onShowDiscography: '&'
+      onShowDiscography: '&',
+      selectorVisible: '<'
     }
   });
 };
