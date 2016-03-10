@@ -9,7 +9,8 @@ module.exports = function (ngModule) {
         album: '<',
         selectedSong: '<',
         onPreviousSong: '&',
-        onNextSong: '&'
+        onNextSong: '&',
+        onPlaying: '&'
       },
       controller: 'GrossoPlayerController',
       controllerAs: 'ctrl',

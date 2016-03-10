@@ -9,6 +9,7 @@ module.exports = function (ngModule) {
     bindings: {
       album: '<',
       songs: '<',
+      playing: '<',
       selectedSong: '<',
       onSelectSong: '&'
     }

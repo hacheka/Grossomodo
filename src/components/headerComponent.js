@@ -1,6 +1,7 @@
 module.exports = function (ngModule) {
   function HeaderController ($scope) {
     var ctrl = this;
+    
   }
 
   ngModule.component('header', {
@@ -12,7 +13,8 @@ module.exports = function (ngModule) {
       onPreviousSong: '&',
       onNextSong: '&',
       onShowDiscography: '&',
-      selectorVisible: '<'
+      selectorVisible: '<',
+      onPlaying: '&'
     }
   });
 };

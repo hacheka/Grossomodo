@@ -19,10 +19,12 @@ function grossoPlayerController (ngModule) {
         if (!$scope.playing) {
           $scope.audio.play();
           $scope.playing = true;
+          ctrl.onPlaying({ playing: true });
           updateTime();
         } else {
           $scope.audio.pause();
           $scope.playing = false;
+          ctrl.onPlaying({ playing: false });
         }
       };
       
@@ -43,10 +45,8 @@ function grossoPlayerController (ngModule) {
           sourceChanged = false;
           $scope.audio.load();
         } else {
-          if ($scope.playing) {
-            $scope.audio.play();
-            updateTime();
-          }
+          $scope.playing = false;
+          $scope.play();
         }
       };
       

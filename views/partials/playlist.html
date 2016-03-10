@@ -1,9 +1,16 @@
 <div class="playlist">
-  <div ng-repeat="song in $ctrl.songs">
-    <div class="playlist__song" ng-class="{ 'playlist__song--selected': $ctrl.selectedSong.id === song.id }" ng-click="$ctrl.onSelectSong({ index: $index })">  
-      <img class="playlist__album-cover" ng-src="{{ $ctrl.album.cover }}">
-      <span class="playlist__song-order">{{ song.order }}. </span>
-      <span class="playlist__song-title">{{ song.title }}</span>
+  <div class="playlist__cover-container">
+    <img class="playlist__album-cover" ng-src="{{ $ctrl.album.cover }}">
+  </div>
+  <div class="playlist__songs">
+    <div ng-repeat="song in $ctrl.songs">
+      <div class="playlist__song" ng-class="{ 'playlist__song--selected': $ctrl.selectedSong.id === song.id }" ng-click="$ctrl.onSelectSong({ index: $index })">  
+        <div class="playlist__song-icon" ng-class="{ 'playlist__song-icon--play': $ctrl.selectedSong.id !== song.id }"></div>
+        <span class="playlist__song-order">{{ song.order }}. </span>
+        <span class="playlist__song-title">{{ song.title }}</span>
+        <div class="cb"></div>
+      </div>
     </div>
   </div>
+  <div class="cb"></div>
 </div>

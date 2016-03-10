@@ -50,6 +50,10 @@ module.exports = function (ngModule) {
       ctrl.selectSong(selectedIndex);
     };
     
+    ctrl.setPlaying = function (playing) {
+      ctrl.playing = playing;
+    }
+    
     ctrl.selectSong(selectedIndex);
   }
 

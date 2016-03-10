@@ -4,12 +4,14 @@
   on-previous-song="$ctrl.previousSong()"
   on-next-song="$ctrl.nextSong()"
   on-show-discography="$ctrl.showDiscography()"
+  on-playing="$ctrl.setPlaying(playing)"
   selector-visible="$ctrl.selectorVisible">
 </header>
 <playlist
   ng-show="$ctrl.playlistVisible"
   album="$ctrl.selectedAlbum"
   songs="$ctrl.selectedAlbum.songs"
+  playing="$ctrl.playing"
   selected-song="$ctrl.selectedSong"
   on-select-song="$ctrl.selectSong(index)">
 </playlist>
