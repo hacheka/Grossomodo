@@ -38,7 +38,9 @@
 		}, {
 			"url": "audio/manifiesto/03-phardarthemcee.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 0.159,
+    "tempo": 92
 	}, {
 		"id": "MNFST-04",
 		"order": 4,
@@ -49,7 +51,9 @@
 		}, {
 			"url": "audio/manifiesto/04-bienvenido.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 2.877,
+    "tempo": 93
 	}, {
 		"id": "MNFST-05",
 		"order": 5,
@@ -60,7 +64,9 @@
 		}, {
 			"url": "audio/manifiesto/05-rottweiler.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 0.367,
+    "tempo": 93
 	}, {
 		"id": "MNFST-06",
 		"order": 6,
@@ -71,7 +77,9 @@
 		}, {
 			"url": "audio/manifiesto/06-me-la-pela-a-mi-ke.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 0.360,
+    "tempo": 94
 	}, {
 		"id": "MNFST-07",
 		"order": 7,
@@ -82,7 +90,9 @@
 		}, {
 			"url": "audio/manifiesto/07-grozzeros.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 0.377,
+    "tempo": 93
 	}, {
 		"id": "MNFST-08",
 		"order": 8,
@@ -93,7 +103,9 @@
 		}, {
 			"url": "audio/manifiesto/08-arena.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 0.365,
+    "tempo": 93
 	}, {
 		"id": "MNFST-09",
 		"order": 9,
@@ -104,7 +116,9 @@
 		}, {
 			"url": "audio/manifiesto/09-welelo-skit.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 0.497,
+    "tempo": 93
 	}, {
 		"id": "MNFST-10",
 		"order": 10,
@@ -115,7 +129,9 @@
 		}, {
 			"url": "audio/manifiesto/10-ramala.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 0.387,
+    "tempo": 92
 	}, {
 		"id": "MNFST-11",
 		"order": 11,
@@ -126,7 +142,9 @@
 		}, {
 			"url": "audio/manifiesto/11-contracultura.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 0.364,
+    "tempo": 93
 	}, {
 		"id": "MNFST-12",
 		"order": 12,
@@ -137,7 +155,9 @@
 		}, {
 			"url": "audio/manifiesto/12-llevadme-ante-vuestro-lider.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 5.351,
+    "tempo": 94
 	}, {
 		"id": "MNFST-13",
 		"order": 13,
@@ -148,7 +168,9 @@
 		}, {
 			"url": "audio/manifiesto/13-sin-piedad.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 2.961,
+    "tempo": 92
 	}, {
 		"id": "MNFST-14",
 		"order": 14,
@@ -159,7 +181,9 @@
 		}, {
 			"url": "audio/manifiesto/14-fuego-y-hielo.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 8.671,
+    "tempo": 98
 	}, {
 		"id": "MNFST-15",
 		"order": 15,
@@ -170,6 +194,8 @@
 		}, {
 			"url": "audio/manifiesto/15-outrolophitecus.ogg",
 			"type": "audio/ogg"
-		}]
+		}],
+    "firstKick": 2.955,
+    "tempo": 93
 	}]
 }

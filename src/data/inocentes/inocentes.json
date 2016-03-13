@@ -5,58 +5,156 @@
   "songs": [{
     "id": "INOC-01",
     "order": 1,
-    "title": "Intro"
+    "title": "Intro",
+		"media": [{
+			"url": "audio/inocentes/01-intro.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/01-intro.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-02",
     "order": 2,
-    "title": "Ultraboomap"    
+    "title": "Ultraboombap",
+		"media": [{
+			"url": "audio/inocentes/02-ultraboombap.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/02-ultraboombap.ogg",
+			"type": "audio/ogg"
+		}]        
   },{
     "id": "INOC-03",
     "order": 3,
-    "title": "Inocentes"
+    "title": "Inocentes",
+		"media": [{
+			"url": "audio/inocentes/03-inocentes.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/03-inocentes.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-04",
     "order": 4,
-    "title": "Antes del colapso"
+    "title": "Antes del colapso",
+		"media": [{
+			"url": "audio/inocentes/04-antes-del-colapso.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/04-antes-del-colapso.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-05",     
     "order": 5,
-    "title": "Música"
+    "title": "Música",
+		"media": [{
+			"url": "audio/inocentes/05-musica.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/05-musica.ogg",
+			"type": "audio/ogg"
+		}]
   },{
     "id": "INOC-06",
     "order": 6,
-    "title": "Hojas en blanco"
+    "title": "Hojas en blanco",
+		"media": [{
+			"url": "audio/inocentes/06-hojas-en-blanco.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/06-hojas-en-blanco.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-07",
     "order": 7,
-    "title": "Ya se sabe"
+    "title": "Ya se sabe",
+		"media": [{
+			"url": "audio/inocentes/07-ya-se-sabe.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/07-ya-se-sabe.ogg",
+			"type": "audio/ogg"
+		}]   
   },{
     "id": "INOC-08",
     "order": 8,
-    "title": "Adamantio"
+    "title": "Adamantio",
+		"media": [{
+			"url": "audio/inocentes/08-adamantio.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/08-adamantio.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-09",
     "order": 9,
-    "title": "Q.M.V.A.C."
+    "title": "Q.M.V.A.C.",
+		"media": [{
+			"url": "audio/inocentes/09-qmvac.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/09-qmvac.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-10",
     "order": 10,
-    "title": "Veintitantos"
+    "title": "Veintitantos",
+		"media": [{
+			"url": "audio/inocentes/10-veintitantos.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/10-veintitantos.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-11",
     "order": 11,
-    "title": "Vida en Martes"
+    "title": "Vida en Martes",
+		"media": [{
+			"url": "audio/inocentes/11-vida-en-martes.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/11-vida-en-martes.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-12",
     "order": 12,
-    "title": "Locomotion"
+    "title": "Locomotion",
+		"media": [{
+			"url": "audio/inocentes/12-locomotion.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/12-locomotion.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-13",
     "order": 13,
-    "title": "El Tribaile"
+    "title": "El Tribaile",
+		"media": [{
+			"url": "audio/inocentes/13-tribaile.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/13-tribaile.ogg",
+			"type": "audio/ogg"
+		}]    
   },{
     "id": "INOC-14",
     "order": 14,
-    "title": "Clásico"
+    "title": "Clásico",
+		"media": [{
+			"url": "audio/inocentes/14-clasico.mp3",
+			"type": "audio/mp3"
+		}, {
+			"url": "audio/inocentes/14-clasico.ogg",
+			"type": "audio/ogg"
+		}]    
   }]
 }
