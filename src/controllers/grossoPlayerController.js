@@ -25,6 +25,7 @@ function grossoPlayerController (ngModule) {
           $scope.audio.pause();
           $scope.playing = false;
           ctrl.onPlaying({ playing: false });
+          $scope.currentBar = '';
         }
       };
       
