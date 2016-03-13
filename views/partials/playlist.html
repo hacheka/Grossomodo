@@ -8,6 +8,7 @@
         <div class="playlist__song-icon" ng-class="{ 'playlist__song-icon--play': $ctrl.selectedSong.id !== song.id }"></div>
         <span class="playlist__song-order">{{ song.order }}. </span>
         <span class="playlist__song-title">{{ song.title }}</span>
+        <span class="playlist__song-has-lyrics" ng-if="$ctrl.hasLyrics(song.id)">letra</span>
         <div class="cb"></div>
       </div>
     </div>

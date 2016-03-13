@@ -17,10 +17,17 @@ module.exports = function (ngModule) {
       });
       
       return fetchedLyrics;
-    }
+    };
+    
+    var hasLyrics = function (lyricsId) {
+      return lyrics.filter(function (item) {
+        return item.id === lyricsId;
+      }).length > 0;
+    };
 
     return {
-      fetchLyrics: fetchLyrics
+      fetchLyrics: fetchLyrics,
+      hasLyrics: hasLyrics
     };
   });
 };

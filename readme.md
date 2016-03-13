@@ -1,10 +1,10 @@
 # GROSSOMODO WEBSITE
 
-Website for the spanish rap group *GROSSOMODO*.
+Website for the spanish rap group **GROSSOMODO**.
 
 Its main feature is an audio player with the group albums, sync'ed with the lyrics, ala lyrics video but made in Javascript.
 
-Made for education purposes. Mainly for learning about *AngularJS* features:
+Made for education purposes. Mainly for learning about **AngularJS** features:
 * Components: almost all website parts have been made using the new component syntax in AngularJS 1.5.
 * Audio player: the audio player and its syncing mechanism with lyrics are developed in a custom directive.
 * Webpack: the website code is bundled using Webpack.
