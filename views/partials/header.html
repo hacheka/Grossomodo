@@ -1,13 +1,15 @@
 <div class="header">
-  <span class="header__title">GROSSOMODO</span>
-  <span class="header__back" ng-if="!$ctrl.selectorVisible" ng-click="$ctrl.onShowDiscography()">&lt;</span>
-  <div class="cb"></div>
-  <grosso-player
-    album='$ctrl.album'
-    selected-song="$ctrl.selectedSong"
-    selector-visible="$ctrl.selectorVisible"
-    on-previous-song="$ctrl.onPreviousSong()"
-    on-next-song="$ctrl.onNextSong()"
-    on-playing="$ctrl.onPlaying({ playing: playing })">
-  </grosso-player>
+  <div class="header__container">
+    <span class="header__title">GROSSOMODO</span>
+    <span class="header__back" ng-if="!$ctrl.selectorVisible" ng-click="$ctrl.onShowDiscography()">&lt;</span>
+    <div class="cb"></div>
+    <grosso-player
+      album='$ctrl.album'
+      selected-song="$ctrl.selectedSong"
+      selector-visible="$ctrl.selectorVisible"
+      on-previous-song="$ctrl.onPreviousSong()"
+      on-next-song="$ctrl.onNextSong()"
+      on-playing="$ctrl.onPlaying({ playing: playing })">
+    </grosso-player>
+  </div>
 </div>
