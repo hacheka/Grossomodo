@@ -6,3 +6,4 @@ require('./controllers/grossoPlayerController')(app);
 require('./directives/grossoPlayerDirective')(app);
 require('./services')(app);
 require('./components')(app);
+require("../styles/app.css");
