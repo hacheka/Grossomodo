@@ -4,9 +4,9 @@
     <span class="player__album-name">{{ ctrl.album.albumName }}</span>
   </div>
   <div class="player__controls">    
-    <div class="player__control player__control--next" ng-click="next()" ng-class="{ 'player__control--hidden': !playing }"></div>
+    <div class="player__control player__control--next" ng-click="!playing || next()" ng-class="{ 'player__control--hidden': !playing }"></div>
     <div class="player__control" ng-click="play()" ng-class="{ 'player__control--play': !playing, 'player__control--pause': playing, 'player__control--hidden': ctrl.selectedSong === null }"></div>
-    <div class="player__control player__control--prev" ng-click="prev()" ng-class="{ 'player__control--hidden': !playing }"></div>   
+    <div class="player__control player__control--prev" ng-click="!playing || prev()" ng-class="{ 'player__control--hidden': !playing }"></div>   
   </div>
   <div class="cb"></div>
   <div class="player__progress-bar" ng-class="{ 'player__progress-bar--hidden': !playing }">
