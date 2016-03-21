@@ -9,7 +9,9 @@ module.exports = function (ngModule) {
     lyrics.push(require("json!../data/manifiesto/rottweiler.json"));
     lyrics.push(require("json!../data/manifiesto/grozzeros.json"));
     lyrics.push(require("json!../data/manifiesto/arena.json"));
-        
+    lyrics.push(require("json!../data/manifiesto/welelo.json"));    
+    lyrics.push(require("json!../data/manifiesto/ramala.json"));
+            
     var fetchLyrics = function (lyricsId) {
       var fetchedLyrics = null;
       
