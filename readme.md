@@ -4,7 +4,7 @@ Website for the spanish rap group **GROSSOMODO**.
 
 Its main feature is an audio player with the group albums, sync'ed with the lyrics, ala lyrics video but made in Javascript.
 
-Watch the preview at [http://grossomodo.org/new/grossomodo.html](http://grossomodo.org/new/grossomodo.html)
+Watch the preview at [http://hacheka.com/gm/grossomodo.html](http://hacheka.com/gm/grossomodo.html)
 
 Made for education purposes. Mainly for learning about **AngularJS** features:
 * Components: almost all website parts have been made using the new component syntax in AngularJS 1.5.
